@@ -61,9 +61,9 @@ $ curl -v http://localhost/health
 ```
 
 ## 프로젝트 설명
-- health 체크가 가능한 springbootproject로 DockerImage를 만들어 DockerHub에 쉐어하였습니다.
-- 만든 이미지와 Nginx를 이미지를 이용하여 독립적인 컨테이너들을 만듭니다.
-- Nginx가 proxy server역할을 하여 다수의 컨테이너에 요청을 보내는 Load Blancing을 합니다.
+- health 체크가 가능한 Spring Boot Project로 Docker Image를 만들어 Docker Hub에 쉐어하였습니다.
+- Spring Boot Project 이미지와 Nginx 이미지를 이용하여 독립적인 컨테이너들을 만듭니다.
+- Nginx가 proxy server역할을 하여 다수의 컨테이너에 요청을 보내는 Load Balancing을 합니다.
 - 무중단 배포를 위해 Blue-Green Deployment 방식을 사용하였습니다.
 - 로그는 Log폴더에 실시간으로 쌓입니다.
 
