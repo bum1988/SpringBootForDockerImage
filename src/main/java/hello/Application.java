@@ -14,6 +14,11 @@ public class Application {
         return "Hello KaKaoPay Team!!";
     }
 
+    @RequestMapping("/health")
+    public Response healthCheck() {
+        return new Response("success", "It works well!!");
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
