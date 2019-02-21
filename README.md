@@ -31,6 +31,7 @@
 
 9. 어플리케이션 REST API 추가. [GET /health] Health check REST API. 응답결과는 JSON Object 구현.
 - health 체크 응답결과를 JSON object로 반환합니다.
+
 ![1-9](./src/main/resources/images/1-9.PNG)
 
 ## 사전준비
