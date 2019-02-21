@@ -39,22 +39,33 @@
 - 실행예
 ``` bash
 # start.sh (웹서비스 실행을 위한 docker compose를 실행 및 재시작)
-./start.sh
+$ ./start.sh
 
 # stop.sh (웹서비스 중지)
-./stop.sh 
+$ ./stop.sh 
 
 # startscale.sh (APP container수를 매개변수로 넘겨 그 수만큼 실행가능)
-./startscale 3
+$ ./startscale 3
 
 # doploy.sh (무중단배포)
-./doploy.sh 
+$ ./doploy.sh 
 ```
 
 3. 웹서비스 접속
+``` bash
+# Hello team!!
+$ curl -v http://localhost/
+
+# {"status":"success","content":"It works well!!"}
 $ curl -v http://localhost/health
+```
 
-
+## 프로젝트 설명
+- health 체크가 가능한 springbootproject로 DockerImage를 만들어 DockerHub에 쉐어하였습니다.
+- 만든 이미지와 Nginx를 이미지를 이용하여 독립적인 컨테이너들을 만듭니다.
+- Nginx가 proxy server역할을 하여 다수의 컨테이너에 요청을 보내는 Load Blancing을 합니다.
+- 무중단 배포를 위해 Blue-Green Deployment 방식을 사용하였습니다.
+- 로그는 Log폴더에 실시간으로 쌓입니다.
 
 
 
