@@ -28,7 +28,9 @@
 ![1-6](./src/main/resources/images/1-6.PNG)
 
 7. 무중단 배포 동작을 구현. (배포 방식에 제한 없음)
-- 
+- Blue-Green deploy 방식을 이용하여 구현하였습니다.
+
+![1-7](./src/main/resources/images/1-7.PNG)
 
 8. 실행스크립트 개발언어는 bash/python/go 선택하여 작성.
 - bash를 선택하여 작성하였습니다.
@@ -58,7 +60,8 @@ $ ./stop.sh
 $ ./startscale 3
 
 # doploy.sh (무중단배포)
-$ ./doploy.sh 
+$ ./start.sh #서비스가 진행되고 있다고 가정.
+$ ./doploy.sh #서비스가 번갈아가며 새로운 소스를 Pull받은후 적용.
 ```
 
 3. 웹서비스 접속
