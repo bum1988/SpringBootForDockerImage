@@ -23,7 +23,7 @@
    - Nginx 사용하였습니다.
 
 6. 웹서버는 Reverse proxy 80 port, Round robin 방식으로 설정.
-   - Nginx를 Reverse서버로 사용 균등하게 각 container로 요청을 전달합니다.
+   - Nginx를 Reverse서버로 사용 균등하게 각 container로 요청을 전달합니다.(이미지에서 container주소가 바뀜)
 
 ![1-6](./src/main/resources/images/1-6.PNG)
 
@@ -49,7 +49,7 @@
 2. 실행스크립트를 실행합니다
 스크립트가 "Permission denied"로 실행되지 않을때 아래명령어를 이용하세요.
 ``` bash
-chmod +x $(filename)
+$ chmod +x $(filename)
 ```
 
 ### 실행예
