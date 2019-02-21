@@ -47,8 +47,12 @@
 ## 실행방법
 1. 해당 프로젝트 전체를 clone합니다.(다운도 상관없음)
 2. 실행스크립트를 실행합니다
+스크립트가 "Permission denied"로 실행되지 않을때 아래명령어를 이용하세요.
+``` bash
+chmod +x $(filename)
+```
 
-- 실행예
+### 실행예
 ``` bash
 # start.sh (웹서비스 실행을 위한 docker compose를 실행 및 재시작)
 $ ./start.sh
